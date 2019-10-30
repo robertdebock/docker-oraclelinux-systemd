@@ -1,4 +1,4 @@
-FROM oraclelinux:8
+FROM oraclelinux:7
 LABEL maintainer="Robert de Bock"
 ENV container=docker
 
