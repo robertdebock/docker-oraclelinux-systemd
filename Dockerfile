@@ -1,5 +1,7 @@
 FROM oraclelinux:8
-LABEL maintainer="Robert de Bock"
+
+LABEL maintainer="Robert de Bock <robert@meinit.nl>"
+
 ENV container=docker
 
 RUN yum -y reinstall systemd
@@ -14,4 +16,5 @@ RUN cd /etc/systemd/system/sysinit.target.wants/ ; \
     rm -f /lib/systemd/system/anaconda.target.wants/*
 
 VOLUME ["/sys/fs/cgroup"]
+
 CMD ["/usr/sbin/init"]
