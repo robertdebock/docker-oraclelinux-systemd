@@ -3,6 +3,8 @@ Docker Oracle Linux Systemd
 
 This Dockerfile can build containers capable to use systemd.
 
+[![oraclelinux build status](https://img.shields.io/docker/cloud/build/robertdebock/oraclelinux.svg)](https://hub.docker.com/repository/docker/robertdebock/oraclelinux)
+
 Branches
 --------
 
