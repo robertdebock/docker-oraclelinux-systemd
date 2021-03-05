@@ -4,7 +4,7 @@ LABEL maintainer="Robert de Bock <robert@meinit.nl>"
 
 ENV container=docker
 
-RUN yum -y reinstall systemd
+RUN dnf -y reinstall systemd
 RUN cd /etc/systemd/system/sysinit.target.wants/ ; \
     for i in * ; do [ $i = systemd-tmpfiles-setup.service ] || rm -f $i ; done ; \
     rm -f /lib/systemd/system/multi-user.target.wants/* ; \
