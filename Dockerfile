@@ -1,6 +1,7 @@
 FROM oraclelinux:8
 
 LABEL maintainer="Robert de Bock <robert@meinit.nl>"
+LABEL build_date="2021-09-24"
 
 ENV container=docker
 
